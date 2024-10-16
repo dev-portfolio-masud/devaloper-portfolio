@@ -39,3 +39,21 @@ width: 80%;
 .half-width{
 width: 50%;
     }
+.second-section{
+    background-image:url(image/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.experiances-list{
+    padding: 50px;
+    margin: 50px;
+    box-shadow: 5px 10px 40px;
+    border-image: linear-gradient(to right, tomato, orange) 1;
+    border-left: 8px solid tomato;
+}
+.experiances-section{
+    background-image: url(image/exp-bg.png);
+    background-position:left;
+    background-repeat: no-repeat;
+}
