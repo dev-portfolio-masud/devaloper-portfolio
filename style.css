@@ -5,10 +5,10 @@ body{
         color: orange;
     }
 section{
-        display: flex;
+        
     }
     .welcome-section{
-        
+        display: flex;
         background-image: url(image/top-banner.png);
         background-repeat: no-repeat;
     }
@@ -40,6 +40,8 @@ width: 80%;
 width: 50%;
     }
 .second-section{
+    align-items: center;
+    display: flex;
     background-image:url(image/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -53,7 +55,41 @@ width: 50%;
     border-left: 8px solid tomato;
 }
 .experiances-section{
+    display: flex;
     background-image: url(image/exp-bg.png);
     background-position:left;
     background-repeat: no-repeat;
+}
+
+
+@media (max-width: 767px) {
+   .welcome-section{
+    display: flex;
+    flex-direction: column;
+   } 
+   .half-width{
+    width: 100%;
+   }
+   .content-area{
+    align-items: center;
+   }
+   .image-area img{
+    padding-top: 20px;
+   }
+   .second-section{
+    flex-direction: column;
+    background: none;
+   }
+   
+   .experiances-section{
+    flex-direction: column;
+   }
+   .experiances-list{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+   }
+   .content-area{
+    order: 2;
+   }
 }
